@@ -57,6 +57,7 @@ int main(){
     ThreadPool pool(4);
     vector<future<int>>res;
     for(int i=0;i<10;i++){
+        //  res先放入 占位符 future， 后续再获取结果
         res.emplace_back(pool.enqueue([i](){
             cout<<"task : "<<i<<" is running"<<endl;
             this_thread::sleep_for(chrono::seconds(1));

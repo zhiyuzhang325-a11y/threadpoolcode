@@ -50,5 +50,6 @@ int main(){
             cout<<"task : "<<i<<" is running"<<endl;
             cout<<"task : "<<i<<" is finished"<<endl;
         });
+        cout << "i = " << i << "result : " << endl;
     }
 }
